@@ -24,7 +24,6 @@ export class AuthService {
   signOut() { localStorage.removeItem(ID_TOKEN); }
 
   authenticated() { 
-    console.log(tokenNotExpired(ID_TOKEN, localStorage.getItem(ID_TOKEN)));
     return tokenNotExpired(ID_TOKEN, localStorage.getItem(ID_TOKEN)); 
   }
 }
