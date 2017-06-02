@@ -60,5 +60,6 @@ function loadUserCollection(webtaskContext) {
 
   // connects to MongoDB and returns the user collection
   let mongodb = mongojs(`${MONGO_USER}:${MONGO_PASSWORD}@${MONGO_URL}`);
-  return mongodb.collection(token.sub);
+  return mongodb.collection('tasks');
+  // return mongodb.collection(token.sub);
 }

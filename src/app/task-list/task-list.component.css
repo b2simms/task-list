@@ -8,3 +8,14 @@ button.delete {
   float: right;
   top: -60px;
 }
+
+.col {
+  width: 50%;
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop browsers: */
+    .col {
+      width: 100%;
+    }
+}
